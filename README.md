@@ -1,5 +1,5 @@
 ## EDUSPHERE-CLIENT-PROJECT
-Edusphere is an educational platform designed to connect learners with a variety of courses and learning resources in a secure and user-friendly environment. This full-stack web application provides secure user authentication and content access using JSON Web Tokens (JWT).
+Edusphere is an educational platform designed to connect learners with a variety of courses and learning resources in a secure and user-friendly environment. This full-stack web application provides secure user authentication.
 
 ## FEATURES:
 
