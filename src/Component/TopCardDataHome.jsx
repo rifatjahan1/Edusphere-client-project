@@ -14,7 +14,7 @@ const TopCardDataHome = ({ article }) => {
         <span className="font-medium text-gray-800">{article.authoreName}</span>
     </div>
 
-    <h2 className="text-xl font-semibold mb-2">{article.title}</h2>
+    <h2 className="text-xl font-semibold mb-2 text-gray-800">{article.title}</h2>
     <p className="text-gray-600 text-sm mb-3">{article.content}</p>
     <div className="text-gray-500 text-xs mb-4">
         <span>{article.date}</span>

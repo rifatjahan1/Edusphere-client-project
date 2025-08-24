@@ -35,7 +35,7 @@ const AllArticles = () => {
         <select
           value={filter}
           onChange={handleFilterChange}
-          className="border px-3 py-2 rounded shadow"
+          className="border px-3 py-2 rounded shadow text-gray-500"
         >
           <option value="All">All Categories</option>
           <option value="Technology">Technology</option>

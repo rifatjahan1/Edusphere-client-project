@@ -60,7 +60,7 @@ const CommentsSection = ({ articleId }) => {
         }
     };
     return (
-        <div className="mt-10">
+        <div className="mt-10 text-gray-800">
             <h2 className="text-xl font-semibold mb-4">Comments ({comments.length})</h2>
 
             {user ? (

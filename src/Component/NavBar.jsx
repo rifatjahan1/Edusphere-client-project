@@ -145,7 +145,7 @@ const NavBar = () => {
            
           </div>
           {/* Left: logo */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center ">
             <img
               src="https://i.ibb.co/Z1SyZrKV/rsz-1notebook.png"
               alt="EduSphere Logo"

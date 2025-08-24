@@ -13,7 +13,7 @@ const AllArticleCard = ({ article }) => {
                     />
 
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{article.title}</h3>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">{article.title}</h3>
                 <p className="text-gray-700 text-sm mb-1">
                     <strong>Author:</strong> {article.authoreName}
                 </p>

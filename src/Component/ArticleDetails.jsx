@@ -38,12 +38,12 @@ const ArticleDetails = () => {
             )}
 
             <div className="flex items-center gap-3 mb-4">
-                <span className="font-semibold text-blue-500 text-xl">{article.authorName}</span>
+                <span className="font-semibold text-blue-500 text-xl">{article.authoreName}</span>
             </div>
 
-            <h1 className="text-2xl font-bold mb-4">{article.title}</h1>
+            <h1 className="text-2xl font-bold mb-4 text-gray-800">{article.title}</h1>
 
-            <div className="text-base leading-relaxed whitespace-pre-line">{article.content}</div>
+            <div className="text-gray-800 leading-relaxed whitespace-pre-line">{article.content}</div>
 
             <div className="mb-4">
                 {(Array.isArray(article.tags) ? article.tags : article.tags?.split(',') || []).map((tag, idx) => (
@@ -59,11 +59,11 @@ const ArticleDetails = () => {
             </div>
 
             <div>
-                <p>Likes: {article.likedBy.length}</p>
+                <p className='text-gray-700'>Likes: {article.likedBy.length}</p>
                 <button
                     onClick={handleLike}
                     className={`mt-2 px-4 py-2 rounded ${
-                        isLiked ? 'bg-red-500 text-white' : 'bg-gray-300'
+                        isLiked ? 'bg-red-500 text-white' : 'bg-gray-500 text-white'
                     }`}
                 >
                     {isLiked ? '♥ Liked' : '♡ Like'}

@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 const CategoryArticleCard = ({ article }) => {
     return (
-        <div className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <div className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition ">
            <div className="flex items-center justify-center space-x-3  py-2 rounded">
                     
                         <img

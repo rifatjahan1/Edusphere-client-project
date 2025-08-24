@@ -8,14 +8,14 @@ const CategoryArticles = () => {
      const navigate = useNavigate();
 
     return (
-        <div className="max-w-6xl mx-auto px-4 py-6">
+        <div className="max-w-6xl mx-auto px-4 py-6 mt-8">
             <button
                 className="btn text-white bg-cyan-500 "
                 onClick={() => navigate('/')}
             >
                 Back Home
             </button>
-            <h2 className="text-2xl mb-8 lg:text-4xl font-bold  text-center text-blue-500">
+            <h2 className="text-2xl my-6 lg:text-4xl font-bold  text-center text-blue-500">
                 Articles in "{category}"
             </h2>
             {articles.length === 0 ? (
