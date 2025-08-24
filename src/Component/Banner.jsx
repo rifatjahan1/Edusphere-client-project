@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 const Banner = () => {
     return (
-        <div className='mt-12 w-full bg-amber-300'>
+        <div className='mt-12 w-full '>
             <div
                 className="hero min-h-screen"
                 style={{
