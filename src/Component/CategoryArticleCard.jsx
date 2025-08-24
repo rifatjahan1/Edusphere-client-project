@@ -4,15 +4,15 @@ import { Link } from 'react-router';
 const CategoryArticleCard = ({ article }) => {
     return (
         <div className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-           <div className="flex items-center space-x-3  py-2 rounded">
-                    <div>
+           <div className="flex items-center justify-center space-x-3  py-2 rounded">
+                    
                         <img
                             src={article.AuthorPhoto}
                             alt={article.Author}
                             className="w-10 h-10  border border-gray-300 rounded-full object-cover"
                         />
-                    </div>
-                    <div>
+                    
+                    <div className='text-black'>
                         <span>{article.authorName}</span>
                     </div>
                 </div>

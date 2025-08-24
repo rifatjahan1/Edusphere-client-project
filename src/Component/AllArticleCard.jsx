@@ -15,7 +15,7 @@ const AllArticleCard = ({ article }) => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{article.title}</h3>
                 <p className="text-gray-700 text-sm mb-1">
-                    <strong>Author:</strong> {article.authorName}
+                    <strong>Author:</strong> {article.authoreName}
                 </p>
                 <p className="text-gray-500 text-sm mb-4">
                     <strong>Date:</strong> {new Date(article.date).toLocaleDateString()}
