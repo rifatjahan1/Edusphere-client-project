@@ -46,7 +46,7 @@ const AuthProvider = ({children}) => {
 //         const unSubscribe = onAuthStateChanged(auth, currentUser => {
 //         setUser(currentUser);
 //              if (currentUser?.email) {
-//                  axios.post(`http://localhost:3000/jwt`, {
+//                  axios.post(`https://edusphere-server-project.vercel.app/jwt`, {
 //                     email: currentUser?.email,
 //                 }).then(res => {
 //                     //console.log(res.data)

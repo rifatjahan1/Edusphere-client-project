@@ -161,7 +161,7 @@ const NavBar = () => {
             <ul className="flex items-center gap-6 font-semibold text-cyan-500">
               {publicLinks}
               {/* {user && privateLinks} */}
-              {!user && <li><NavLink to="/login">Login</NavLink></li>}
+              {/* {!user && <li><NavLink to="/login">Login</NavLink></li>} */}
             </ul>
           </nav>
 

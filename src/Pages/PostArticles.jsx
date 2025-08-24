@@ -29,7 +29,7 @@ const PostArticles = () => {
         articleData.tags = tags;
 
         try {
-            const response = await axios.post('http://localhost:3000/articles', articleData, {
+            const response = await axios.post('https://edusphere-server-project.vercel.app/articles', articleData, {
                 headers: {
                     'Content-Type': 'application/json'
                 }

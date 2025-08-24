@@ -22,7 +22,7 @@ const MyArticles = () => {
   //      // console.log('Missing token or user email');
   //       return;
   //     }
-  //     const res = await axios.get(`http://localhost:3000/myArticles?authorEmail=${user.email}`   ,{
+  //     const res = await axios.get(`https://edusphere-server-project.vercel.app/myArticles?authorEmail=${user.email}`   ,{
   //       headers:{
   //          Authorization: `Bearer ${token}`,
   //       },
@@ -43,7 +43,7 @@ const fetchMyArticles = async () => {
       return;
     }
     const res = await axios.get(
-      `http://localhost:3000/myArticles?authorEmail=${user.email}`
+      `https://edusphere-server-project.vercel.app/myArticles?authorEmail=${user.email}`
     );
     setArticles(res.data);
     setLoading(false);
@@ -72,7 +72,7 @@ const fetchMyArticles = async () => {
 
     if (result.isConfirmed) {
       try {
-        const res = await axios.delete(`http://localhost:3000/articles/${id}`);
+        const res = await axios.delete(`https://edusphere-server-project.vercel.app/articles/${id}`);
         if (res.data.deletedCount > 0) {
           Swal.fire('Deleted!', 'Your article has been deleted.', 'success');
           fetchMyArticles();
@@ -103,7 +103,7 @@ const fetchMyArticles = async () => {
     };
 
     try {
-      await axios.put(`http://localhost:3000/articles/${editingArticle._id}`, updatedArticle);
+      await axios.put(`https://edusphere-server-project.vercel.app/articles/${editingArticle._id}`, updatedArticle);
       setEditModalOpen(false);
       fetchMyArticles();
       Swal.fire('Updated!', 'Article updated successfully.', 'success');

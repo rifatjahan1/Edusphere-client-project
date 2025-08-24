@@ -8,7 +8,7 @@ const CommentsSection = ({ articleId }) => {
     useEffect(() => {
         async function fetchComments() {
             try {
-                const res = await fetch(`http://localhost:3000/comments/${articleId}`);
+                const res = await fetch(`https://edusphere-server-project.vercel.app/comments/${articleId}`);
                 if (!res.ok) throw new Error('Failed to load comments');
                 const data = await res.json();
                 setComments(data);
@@ -45,7 +45,7 @@ const CommentsSection = ({ articleId }) => {
 
 
         try {
-            const res = await fetch('http://localhost:3000/comments', {
+            const res = await fetch('https://edusphere-server-project.vercel.app/comments', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(newComment),

@@ -18,7 +18,7 @@ const ArticleDetails = () => {
         }
 
         try {
-            const res = await axios.patch(`http://localhost:3000/articles/${article._id}/like`, {
+            const res = await axios.patch(`https://edusphere-server-project.vercel.app/articles/${article._id}/like`, {
                 userId: user.uid
             });
             setArticle(res.data); // Update article state with new data

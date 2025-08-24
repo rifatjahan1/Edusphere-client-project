@@ -33,7 +33,7 @@ const router = createBrowserRouter([
       {
         index: true,
         loader: async () => {
-          const res = await axios.get('http://localhost:3000/articles');
+          const res = await axios.get('https://edusphere-server-project.vercel.app/articles');
           return res.data;
         },
         element: <Home />
@@ -41,7 +41,7 @@ const router = createBrowserRouter([
       {
         path: "allArticles",
         loader: async () => {
-          const res = await axios.get('http://localhost:3000/allArticles');
+          const res = await axios.get('https://edusphere-server-project.vercel.app/allArticles');
           return res.data;
         },
 
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
       {
         path: "category/:category",
         loader: async ({ params }) => {
-          const res = await axios.get(`http://localhost:3000/articles?category=${params.category}`);
+          const res = await axios.get(`https://edusphere-server-project.vercel.app/articles?category=${params.category}`);
           return res.data;
         },
         element: <CategoryArticles />
@@ -62,7 +62,7 @@ const router = createBrowserRouter([
       {
         path: "/articleDetails/:id",
                loader: async ({ params }) => {
-          const res = await axios.get(`http://localhost:3000/articles/${params.id}`);
+          const res = await axios.get(`https://edusphere-server-project.vercel.app/articles/${params.id}`);
           return res.data;
         },
         element: <ArticleDetails />

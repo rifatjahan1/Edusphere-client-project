@@ -31,7 +31,7 @@ Navigate to the backend folder and run npm install and npm start
 
 Navigate to the frontend folder and run npm install and npm start
 
-Open the frontend in your browser at http://localhost:3000
+Open the frontend in your browser at https://edusphere-server-project.vercel.app
 
 ## LIVE DEMO:
 [https://jwt-edusphere.web.app/]
