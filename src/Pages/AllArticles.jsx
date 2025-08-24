@@ -19,7 +19,7 @@ const AllArticles = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-6 ">
+    <div className="max-w-6xl mx-auto px-4 py-6 mt-8">
       <h2 className="text-2xl lg:text-4xl font-bold text-center mb-4 text-blue-500">All Articles</h2>
 
       <div className="space-y-4 lg:space-y-0 lg:flex justify-between mb-8">
@@ -58,3 +58,9 @@ const AllArticles = () => {
 };
 
 export default AllArticles;
+
+
+
+
+
+
