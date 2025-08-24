@@ -1,9 +1,9 @@
-## JWT-EDUSPHERE-COLLECTION
+## EDUSPHERE-CLIENT-PROJECT
 Edusphere is an educational platform designed to connect learners with a variety of courses and learning resources in a secure and user-friendly environment. This full-stack web application provides secure user authentication and content access using JSON Web Tokens (JWT).
 
 ## FEATURES:
 
-User registration and login with JWT-based authentication
+User registration and login with  authentication
 
 Protected routes ensuring secure access to content
 
@@ -21,7 +21,7 @@ Express.js
 
 MongoDB
 
-JSON Web Tokens (JWT)
+
 
 ## HOW TO RUN LOCALLY:
 
