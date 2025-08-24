@@ -13,7 +13,7 @@ const CategoryArticleCard = ({ article }) => {
                         />
                     
                     <div className='text-black'>
-                        <span>{article.authorName}</span>
+                        <span>{article.authoreName}</span>
                     </div>
                 </div>
             <h2 className="text-xl font-semibold mb-2">{article.title}</h2>
